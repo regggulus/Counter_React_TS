@@ -16,11 +16,10 @@ function App() {
     return (
         <div className="App">
             <div className={'count'}>
-
-                <p className={'p-counter'} >{counter}</p>
+                <p className={'p-counter'} style={counter < maxValue ? {color: '#61dafb', border: 'solid #61dafb'} : {color: 'red', border: 'solid red'}}>{counter}</p>
                 <div className={'buttons'}>
                     <button className={'butStyle'} onClick={increase} disabled={counter < maxValue ? false : true}>inc</button>
-                    <button className={'butStyle'} onClick={reset}>reset</button>
+                    <button className={'butStyle'} onClick={reset} disabled={counter < maxValue ? true : false}>reset</button>
                 </div>
             </div>
 

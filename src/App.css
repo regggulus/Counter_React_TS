@@ -19,7 +19,7 @@
   border: solid #61dafb;
 }
 .p-counter {
-  color: #61dafb;
+  /*color: #61dafb;*/
   display: flex;
   flex-direction: row;
   justify-content: center;
