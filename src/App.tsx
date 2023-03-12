@@ -1,5 +1,10 @@
 import React, {useState} from 'react';
 import './App.css';
+import {Counter} from "./components/count/Counter";
+import {GeneralButton} from "./components/buttons/GeneralButton";
+import {SettingsBlock} from "./components/settings_block/SettingsBlock";
+import {Simulate} from "react-dom/test-utils";
+import input = Simulate.input;
 
 function App() {
     const minValue = 0
@@ -13,19 +18,23 @@ function App() {
     const reset = () => {
         setCounter(0)
     }
+    const styleForCounter = counter < maxValue ? 'p-counter' : `p-counter p-counter-max`
     return (
         <div className="App">
-            <div className={'count'}>
-                <p className={'p-counter'} style={counter < maxValue ? {color: '#61dafb', border: 'solid #61dafb'} : {color: 'red', border: 'solid red'}}>{counter}</p>
+            <div className={'app-count'}>
+                <div className={'p-counter'}>
+
+                    <SettingsBlock/>
+                    <SettingsBlock/></div>
+            </div>
+            <div className={'app-count'}>
+                <Counter counter={counter} style={styleForCounter}/>
                 <div className={'buttons'}>
-                    <button className={'butStyle'} onClick={increase} disabled={counter < maxValue ? false : true}>inc</button>
-                    <button className={'butStyle'} onClick={reset} disabled={counter < maxValue ? true : false}>reset</button>
+                    <GeneralButton title={'inc'} callback={increase} disabled={counter >= maxValue}/>
+                    <GeneralButton title={'reset'} callback={reset} disabled={counter === minValue}/>
                 </div>
             </div>
-
-
         </div>
     );
 }
-
 export default App;
