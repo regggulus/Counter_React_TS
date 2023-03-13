@@ -1,61 +1,78 @@
 .App {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  min-height: 100vh;
-  background-color: #282c34;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    min-height: 100vh;
+    background-color: #282c34;
 }
-.app-count {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  margin: 5em;
-  width: 30vw;
-  height: 25vw;
-  border-radius: .5em;
-  border: solid #61dafb;
+
+.App_Box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5em;
+    width: 35vw;
+    height: 25vw;
+    border-radius: 10px;
+    border: solid #61dafb;
 }
-.p-counter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #61dafb;
-  width: 25vw;
-  height: 5em;
-  border-radius: .3em;
-  font-size: 45px;
-  font-weight: bold;
-  border: solid #61dafb;
-  margin: auto;
+
+.p_counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #61dafb;
+    width: 30vw;
+    height: 15vw;
+    border-radius: 10px;
+    border: solid #61dafb;
+    font-size: 5em;
+    font-weight: bold;
+    margin: auto;
 }
 
 .p-counter-max {
-  color: red;
-  border: solid red
+    color: red;
+    border: solid red
 }
 
-.buttons {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  justify-content: center;
-  width: 25vw;
-  height: 5vw;
-  border-radius: .3em;
-  margin: 0 10px 25px 10px;
-  border: solid #61dafb;
+.App_buttons_Box {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    width: 30vw;
+    height: 6vw;
+    border-radius: 10px;
+    border: solid #61dafb;
+    margin: 0 0 15px 0;
 
 }
 
 .butStyle {
-  width: 5em;
-  height: 2em;
-  font-size: 25px;
-  font-weight: bold;
-  border-radius: .3em;
-  background-color: #61dafb;
-  margin: auto;
+    width: 3em;
+    font-size: 2em;
+    font-weight: bold;
+    border-radius: .2em;
+    background-color: #61dafb;
+    margin: auto;
 }
+
+.app_settings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #61dafb;
+    width: 30vw;
+    height: 15vw;
+    border-radius: 10px;
+    border: solid #61dafb;
+    /*font-size: 5em;*/
+    /*font-weight: bold;*/
+    margin: auto;
+}
+
+

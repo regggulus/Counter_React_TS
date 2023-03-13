@@ -3,7 +3,7 @@ import React from "react";
 type GeneralButtonPropsType = {
     title: string
     callback: () => void
-    disabled: boolean
+    disabled?: boolean
 }
 export function GeneralButton(props: GeneralButtonPropsType) {
     return (
