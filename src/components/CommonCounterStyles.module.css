@@ -1,13 +1,5 @@
-.App {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    min-height: 100vh;
-    background-color: #282c34;
-}
-
-/*.App_Box {
+/*App_Box*/
+.Main_Box {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -17,9 +9,9 @@
     height: 25vw;
     border-radius: 10px;
     border: solid #61dafb;
-}*/
-
-.p_counter {
+}
+/*p_counter*/
+.valueBox {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,13 +24,13 @@
     font-weight: bold;
     margin: auto;
 }
-
-.p-counter-max {
+/*p_counter-max*/
+.valueBox_maxValue {
     color: red;
     border: solid red
 }
-
-.App_buttons_Box {
+/*App_buttons_Box*/
+.SupperButtons_Box {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -50,17 +42,17 @@
     margin: 0 0 15px 0;
 
 }
-
-.butStyle {
+/*butStyle*/
+/*.SupperButtonsStyle {
     width: 3em;
     font-size: 2em;
     font-weight: bold;
     border-radius: .2em;
     background-color: #61dafb;
     margin: auto;
-}
-
-.app_settings {
+}*/
+/*app_settings*/
+.settingsBlock {
     display: flex;
     align-items: center;
     justify-content: center;

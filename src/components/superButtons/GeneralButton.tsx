@@ -1,4 +1,6 @@
 import React from "react";
+import buttStyle from './GeneralButton.module.css'
+
 
 type GeneralButtonPropsType = {
     title: string
@@ -7,6 +9,6 @@ type GeneralButtonPropsType = {
 }
 export function GeneralButton(props: GeneralButtonPropsType) {
     return (
-        <button className={'butStyle'} onClick={props.callback} disabled={props.disabled}>{props.title}</button>
+        <button className={buttStyle.SupperButtonsStyle} onClick={props.callback} disabled={props.disabled}>{props.title}</button>
     )
 }

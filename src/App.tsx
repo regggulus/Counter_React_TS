@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import './App.css';
-import {Counter} from "./components/count/Counter";
+import style from './components/CommonCounterStyles.module.css'
+import {Counter} from "./components/counter/Counter";
 import {SettingsBlock} from "./components/settings_block/SettingsBlock";
-import {GeneralButton} from "./components/buttons/GeneralButton";
+import {GeneralButton} from "./components/superButtons/GeneralButton";
 
 
 function App() {
@@ -18,17 +19,19 @@ function App() {
     const styleForCounter = counter < maxValue ? 'p_counter' : `p_counter p-counter-max`
     return (
         <div className="App">
-            <div className={'App_Box'}>
-                <div className={'app_settings'}>
-                    <SettingsBlock title={'max value:'}/>
-                    <SettingsBlock title={'start value:'} />
-                </div>
-                <div className={'App_buttons_Box'}>
+            {/*<div className={style.Main_Box}>*/}
+                {/*<div className={'app_settings'}>*/}
+                    {/*<SettingsBlock/>*/}
+                    {/*<SettingsBlock title={'max value:'} increase={increase} counter={counter} maxValue={maxValue}/>*/}
+                    {/*<SettingsBlock title={'start value:'} increase={increase} counter={counter} maxValue={maxValue}/>*/}
+                    <SettingsBlock increase={increase} counter={counter} maxValue={maxValue}/>
+                {/*</div>*/}
+               {/* <div className={'App_buttons_Box'}>
                     <GeneralButton title={'save'} callback={increase} disabled={counter >= maxValue}/>
 
-                </div>
-            </div>
-            <div className={'App_Box'}>
+                </div>*/}
+            {/*</div>*/}
+            <div className={style.Main_Box}>
                 <Counter counter={counter} style={styleForCounter}/>
                 <div className={'App_buttons_Box'}>
                     <GeneralButton title={'inc'} callback={increase} disabled={counter >= maxValue}/>
