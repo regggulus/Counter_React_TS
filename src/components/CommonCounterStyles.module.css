@@ -22,49 +22,14 @@
     border: solid #61dafb;
     font-size: 5em;
     font-weight: bold;
-    margin: auto;
+    margin: 15px;
+    /*padding: 0 0 10px 0;*/
 }
 /*p_counter-max*/
 .valueBox_maxValue {
     color: red;
     border: solid red
 }
-/*App_buttons_Box*/
-.SupperButtons_Box {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    justify-content: center;
-    width: 30vw;
-    height: 6vw;
-    border-radius: 10px;
-    border: solid #61dafb;
-    margin: 0 0 15px 0;
 
-}
-/*butStyle*/
-/*.SupperButtonsStyle {
-    width: 3em;
-    font-size: 2em;
-    font-weight: bold;
-    border-radius: .2em;
-    background-color: #61dafb;
-    margin: auto;
-}*/
-/*app_settings*/
-.settingsBlock {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: #61dafb;
-    width: 30vw;
-    height: 15vw;
-    border-radius: 10px;
-    border: solid #61dafb;
-    /*font-size: 5em;*/
-    /*font-weight: bold;*/
-    margin: auto;
-}
 
 

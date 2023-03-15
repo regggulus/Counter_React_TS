@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
 import style from './components/CommonCounterStyles.module.css'
+import buttonStyle from './components/superButtons/GeneralButton.module.css'
 import {Counter} from "./components/counter/Counter";
 import {SettingsBlock} from "./components/settings_block/SettingsBlock";
 import {GeneralButton} from "./components/superButtons/GeneralButton";
@@ -16,26 +17,21 @@ function App() {
     const reset = () => {
         setCounter(0)
     }
-    const styleForCounter = counter < maxValue ? 'p_counter' : `p_counter p-counter-max`
+    const styleForCounter = counter < maxValue ? style.valueBox : `${style.valueBox} ${style.valueBox_maxValue}`
     return (
         <div className="App">
-            {/*<div className={style.Main_Box}>*/}
-                {/*<div className={'app_settings'}>*/}
-                    {/*<SettingsBlock/>*/}
-                    {/*<SettingsBlock title={'max value:'} increase={increase} counter={counter} maxValue={maxValue}/>*/}
-                    {/*<SettingsBlock title={'start value:'} increase={increase} counter={counter} maxValue={maxValue}/>*/}
-                    <SettingsBlock increase={increase} counter={counter} maxValue={maxValue}/>
-                {/*</div>*/}
-               {/* <div className={'App_buttons_Box'}>
-                    <GeneralButton title={'save'} callback={increase} disabled={counter >= maxValue}/>
+            <SettingsBlock increase={increase} counter={counter} maxValue={maxValue}/>
 
-                </div>*/}
-            {/*</div>*/}
             <div className={style.Main_Box}>
                 <Counter counter={counter} style={styleForCounter}/>
-                <div className={'App_buttons_Box'}>
-                    <GeneralButton title={'inc'} callback={increase} disabled={counter >= maxValue}/>
-                    <GeneralButton title={'reset'} callback={reset} />
+
+                <div className={buttonStyle.SupperButtons_Box}>
+                    <GeneralButton title={'inc'}
+                                   callback={increase}
+                                   disabled={counter >= maxValue}/>
+                    <GeneralButton title={'reset'}
+                                   callback={reset}
+                    />
                 </div>
             </div>
         </div>
