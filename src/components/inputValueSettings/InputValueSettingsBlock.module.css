@@ -1,0 +1,22 @@
+.inputGeneralBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    /*background-color: #61dafb;*/
+}
+.title{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0 35px 0 0;
+}
+.inputSetting {
+    width: 150px;
+    height: 45px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    border: solid #61dafb;
+    border-radius: 10px;
+    display: block;
+}
