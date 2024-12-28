@@ -7,9 +7,13 @@ function App() {
     const [count, setCount] = useState(minValue)
     return (
         <div className={'App'}>
+            Счетчик:
             {count}
-            <button onClick={()=> {setCount(count+1)}}>int</button>
-            <button onClick={()=> {setCount(minValue)}}>reset</button>
+            <div>
+                <button style={{}} onClick={()=> {setCount( count+1)}}>int</button>
+                <button onClick={()=> {setCount(minValue)}}>reset</button>
+            </div>
+
         </div>
     )
 }
