@@ -10,7 +10,7 @@ function App() {
             Счетчик:
             {count}
             <div>
-                <button style={{}} onClick={()=> {setCount( count+1)}}>int</button>
+                <button style={{}} onClick={()=> {setCount( count+1)}} disabled={count>=maxValue}>int</button>
                 <button onClick={()=> {setCount(minValue)}}>reset</button>
             </div>
 
