@@ -11,7 +11,7 @@ function App() {
             {count}
             <div>
                 <button style={{}} onClick={()=> {setCount( count+1)}} disabled={count>=maxValue}>int</button>
-                <button onClick={()=> {setCount(minValue)}}>reset</button>
+                <button onClick={()=> {setCount(minValue)}} disabled={count < maxValue}>reset</button>
             </div>
 
         </div>
